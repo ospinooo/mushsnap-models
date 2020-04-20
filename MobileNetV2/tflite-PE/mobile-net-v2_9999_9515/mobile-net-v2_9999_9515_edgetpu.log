@@ -1,0 +1,15 @@
+Edge TPU Compiler version 2.1.302470888
+Input: drive/My Drive/tfg/tflite_models/mobile-net-v2_9999_9515/mobile-net-v2_9999_9515.tflite
+Output: drive/My Drive/tfg/tflite_models/mobile-net-v2_9999_9515/mobile-net-v2_9999_9515_edgetpu.tflite
+
+Operator                       Count      Status
+
+ADD                            10         Mapped to Edge TPU
+PAD                            5          Mapped to Edge TPU
+QUANTIZE                       1          Operation is otherwise supported, but not mapped due to some unspecified limitation
+CONV_2D                        35         Mapped to Edge TPU
+DEPTHWISE_CONV_2D              17         Mapped to Edge TPU
+DEQUANTIZE                     1          Operation is working on an unsupported data type
+MEAN                           1          Mapped to Edge TPU
+SOFTMAX                        1          Mapped to Edge TPU
+FULLY_CONNECTED                2          Mapped to Edge TPU
